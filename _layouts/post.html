@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time>{{ page.date | date: "%Y年%m月%d日" }}</time>
+      {% if page.tags %}
+      <span class="tags">
+        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </span>
+      {% endif %}
+      {% if page.lang %}<span class="lang">{{ page.lang }}</span>{% endif %}
+    </div>
+    {% if page.subtitle %}
+    <p class="post-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <hr>
+    <p>如果你对这个话题有想法，欢迎通过 <a href="mailto:josie.qiu@outlook.com">邮件</a> 或 <a href="https://github.com/glimpse-of-eurydice">GitHub</a> 联系我。</p>
+  </footer>
+</article>
