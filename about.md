@@ -20,6 +20,6 @@ title: About
 ### 联系方式
 
 - GitHub: [glimpse-of-eurydice](https://github.com/glimpse-of-eurydice)
-- Email: josie.qiu@outlook.com
+- Email: josie.qiujw@gmail.com
 
 </article>
